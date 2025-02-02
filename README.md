@@ -8,7 +8,7 @@ Navigate to the Cloned Directory:
 
 Once the repository is cloned, navigate into the folder:
 
-cd Backend-intern
+	cd Backend-intern
 
 change db.js in config according to your postgressql
 
@@ -32,7 +32,7 @@ change db.js in config according to your postgressql
 
 <!-- install Dependencies (if not already done): If you haven't installed the dependencies yet (or if you're not sure), run the following command to install all required packages listed in the package.json file: -->
 
-npm install
+	npm install
 
 
 <!-- Run the Server: Once all dependencies are installed, you can run the application. Assuming the main server file is server.js or app.js, you can run the app with one of these commands:
@@ -41,7 +41,7 @@ If you have nodemon installed (locally or globally): -->
 
 
 
-npx nodemon server.js
+	npx nodemon server.js
 
 
 
@@ -52,36 +52,37 @@ npx nodemon server.js
 This endpoint allows users to register by providing their name, email, password, role and lined_student_id -->
 
 
-/auth/signup
+	/auth/signup
 
 ex - http://localhost:5000/auth/signup
-{
-  "name": "Rushi Patare",
-  "email": "student@slate.com",
-  "password": "11111",
-  "role": "Student",
-  "linked_student_id": "202"
-}
+	{
+	  "name": "Rushi Patare",
+	  "email": "student@slate.com",
+	  "password": "11111",
+	  "role": "Student",
+	  "linked_student_id": "202"
+	}
 
 
 
 # this is for adding  student achievement
 
 
-/student/add
+	/student/add
 
 ex- http://localhost:5000/student/add
-{
-    "student_id": 202,
-    "name": "Rushi Patare",
-    "school_name": "ABC School",
-    "grade": "10th",
-    "achievements": "Science Olympiad Winner"
-}
+	{
+	    "student_id": 202,
+	    "name": "Rushi Patare",
+	    "school_name": "ABC School",
+	    "grade": "10th",
+	    "achievements": "Science Olympiad Winner"
+	}
 
-<!-- 
-for login -->
-/auth/login
+
+for login 
+
+	/auth/login
 
 ex  -
     http://localhost:5000/auth/login
@@ -107,9 +108,9 @@ Set Type to Bearer Token.
 Paste the token you got from login in the Token field.
 Send the request. -->
 
-api end posint 
-
-student/achievements/{student_id}
+api end point 
+	
+	student/achievements/{student_id}
 	
     
 ex - http://localhost:5000/student/achievements/202
