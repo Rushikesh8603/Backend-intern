@@ -53,15 +53,16 @@ This endpoint allows users to register by providing their name, email, password,
 
 
 	/auth/signup
+ 
 
-ex - http://localhost:5000/auth/signup
-	{
-	  "name": "Rushi Patare",
-	  "email": "student@slate.com",
-	  "password": "11111",
-	  "role": "Student",
-	  "linked_student_id": "202"
-	}
+	ex - http://localhost:5000/auth/signup
+		{
+		  "name": "Rushi Patare",
+		  "email": "student@slate.com",
+		  "password": "11111",
+		  "role": "Student",
+		  "linked_student_id": "202"
+		}
 
 
 
@@ -69,6 +70,7 @@ ex - http://localhost:5000/auth/signup
 
 
 	/student/add
+
 
 ex- http://localhost:5000/student/add
 	{
