@@ -12,11 +12,12 @@ Once the repository is cloned, navigate into the folder:
 
 change db.js in config according to your postgressql
 
-
+	chage user , host, databse , password , port according to your database
+ 
 	const { Pool } = require('pg');
 	
 	const pool = new Pool({
-	    user: 'postgres',
+	    user: 'postgres',  #
 	    host: 'localhost',
 	    database: 'rushi',
 	    password: '8603@Rushi',
