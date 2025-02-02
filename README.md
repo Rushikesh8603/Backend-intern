@@ -56,6 +56,8 @@ This endpoint allows users to register by providing their name, email, password,
  
 
 	ex - http://localhost:5000/auth/signup
+
+ 
 		{
 		  "name": "Rushi Patare",
 		  "email": "student@slate.com",
