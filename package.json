@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "<!-- 1. Navigate to Your Backend Directory:\r Assuming you're already in your slate-backend directory, you can run: -->",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
