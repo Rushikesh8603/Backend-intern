@@ -10,6 +10,24 @@ Once the repository is cloned, navigate into the folder:
 
 cd Backend-intern
 
+change db.js in config according to your postgressql
+
+const { Pool } = require('pg');
+
+const pool = new Pool({
+    user: 'postgres',
+    host: 'localhost',
+    database: 'rushi',
+    password: '8603@Rushi',
+    port: 5432,
+});
+
+pool.connect()
+    .then(() => console.log('Connected to PostgreSQL'))
+    .catch((err) => console.error('Database connection error:', err));
+
+module.exports = pool;
+
 
 <<<<<<< HEAD
 <!-- 1. Navigate to Your Backend Directory:
@@ -106,4 +124,4 @@ ex - http://localhost:5000/student/achievements/202
 
 =======
 # Backend-intern
->>>>>>> 55c27fae7e0a998bee2504e9425e1f38e58feb2e
+
