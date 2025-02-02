@@ -12,28 +12,22 @@ cd Backend-intern
 
 change db.js in config according to your postgressql
 
-const { Pool } = require('pg');
 
-const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'rushi',
-    password: '8603@Rushi',
-    port: 5432,
-});
-
-pool.connect()
-    .then(() => console.log('Connected to PostgreSQL'))
-    .catch((err) => console.error('Database connection error:', err));
-
-module.exports = pool;
-
-
-<<<<<<< HEAD
-<!-- 1. Navigate to Your Backend Directory:
-Assuming you're already in your slate-backend directory, you can run: -->
-
-cd slate-backend
+	const { Pool } = require('pg');
+	
+	const pool = new Pool({
+	    user: 'postgres',
+	    host: 'localhost',
+	    database: 'rushi',
+	    password: '8603@Rushi',
+	    port: 5432,
+	});
+	
+	pool.connect()
+	    .then(() => console.log('Connected to PostgreSQL'))
+	    .catch((err) => console.error('Database connection error:', err));
+	
+	module.exports = pool;
 
 
 <!-- install Dependencies (if not already done): If you haven't installed the dependencies yet (or if you're not sure), run the following command to install all required packages listed in the package.json file: -->
@@ -46,12 +40,15 @@ npm install
 If you have nodemon installed (locally or globally): -->
 
 
+
 npx nodemon server.js
+
 
 
 <!-- API Endpoints -->
 
 <!-- 
+
 This endpoint allows users to register by providing their name, email, password, role and lined_student_id -->
 
 
@@ -69,6 +66,7 @@ ex - http://localhost:5000/auth/signup
 
 
 # this is for adding  student achievement
+
 
 /student/add
 
